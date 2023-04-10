@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="html">
+<head>
+    <title>Willkommen! | HTML Tutorials</title>
+    <!--<link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">-->
+
+    <p style="float:left;float:top;padding:5px;cursor:pointer;width:90%;text-align:left;" id="homePage">HTML Tutorials<p style="font-size:12px">Wolfgang Ehrlich 2BKE1</p></p>
+
+<h3>Willkommen auf der Homepage!</h3>
+
+<div style="background:#383838;height:3%;width:35%;padding:10px;border-radius:15px;border:2px #acacac solid;
+user-select: none;float:right;">
+<input onkeyup="search()" onclick="searchOpacity()" class="searchTextbox" id="searchbox" placeholder="Suche...">
+
+    <h4 style="border-bottom:1px #888 solid;padding-bottom:5px;">Tutorials</h4>
+    <div style="overflow-y:auto;height:250px;" id="tutorialslist">
+        <sub class="link"><a class="link" href="btninputlinking.html">Button & Input Verknüpfung</a></sub><br>
+        <sub class="link"><a class="link" href="">DIV-Elemente anzeigen & verstecken</a></sub><br>
+        <sub class="link"><a class="link" href="">Videos einbetten</a></sub><br>
+        <sub class="link"><a class="link" href="">"Speichern unter" - Funktion</a></sub><br>
+        <sub class="link"><a class="link" href="">Commands erstellen</a></sub>
+    </div>
+</div>
+
+<div class="homepageSections">
+<h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">Worum geht es auf dieser Website?</h6>
+<p style="text-align:left;font-size:17px;">Diese Website dient dazu, die Grundlagen von HTML/CSS/JS und verschiedene Funktionen in HTML, CSS und JS kennenzulernen. </p>
+</div>
+<div class="homepageSections">
+    <h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">HTML Anfänger?</h6>
+    <p style="text-align:left;font-size:17px;">Kein Problem! Die wichtigsten Sachen rund um das Erstellen von Websiten mit HTML finden Sie hier.</p>
+    <a class="link2" id="webseiteErstellenButton" href="erstewebseite.html">Webseite erstellen</a>
+</div>
+
+<div class="homepageBoxes">
+    <h4 style="border-bottom:1px #888 solid;padding-bottom:5px;">Kontakt</h4>
+    <div style="overflow-y:auto;height:250px;">
+        <a class="link2" href="btninputlinking.html">Instagram</a>
+        <a class="link2" href="btninputlinking.html">YouTube</a>
+            <a class="link2" href="btninputlinking.html">Discord Server</a>
+</div>
+</div>
+
+<div class="homepageSections">
+        <h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">Worum geht es auf dieser Website?</h6>
+        <p style="text-align:left;font-size:17px;">Diese Website wird dazu gedient, die Grundlagen von HTML/CSS/JS und verschiedene Funktionen in HTML, CSS und JS kennenzulernen. </p>
+</div>
+
+</head>
+
+<style>
+.html{
+background:rgb(70, 70, 70);
+color:white;
+font-size:30px;
+text-align:center;
+font-family:System-ui;
+padding:10px;
+}
+.homepageSections{
+    width:55%;
+    float:left;
+    background:#383838;
+    padding:40px;
+    border-radius:10px;
+    margin:10px;
+}
+.homepageBoxes{
+    background:#383838;
+    height:3%;
+    width:35%;
+    padding:10px;
+    border-radius:15px;
+    border:2px #acacac solid;
+    user-select: none;
+    float:right;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius:8px;
+}
+::-webkit-scrollbar{
+    border-radius:8px;
+    background:#383838;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius:8px;
+}
+
+.link{
+color:#ffffff;
+font-size:90%;
+width:90%;
+height:40px;
+background:rgb(34, 34, 34);
+padding:2px;
+margin:10px;
+border-radius:5px;
+text-decoration: none;
+}
+.link2{
+color:#ffffff;
+font-size:18px;
+width:90%;
+background:rgb(34, 34, 34);
+padding:8px;
+margin:5.5px;
+border-radius:8px;
+display:block;
+text-decoration: none;
+}
+.codebox{
+background:rgb(37, 37, 37);
+border-radius:8px;
+padding-left:10px;
+font-size:14px;
+font-family: monospace;
+text-align:left;
+border:2px #888 solid;
+user-select:none;
+font-language-override:initial;
+
+}
+.resultbox{
+background:rgb(90, 90, 90);
+border-radius:8px;
+padding-left:10px;
+font-size:20px;
+font-weight: bold;
+border:2px #888 solid;
+user-select:none;
+}
+.button{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.copyButton{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:120px;
+    height:35px;
+    cursor:pointer;
+    display:block;
+}
+.textbox{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:1px #888 solid;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.searchTextbox{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    border-bottom:1px #888 solid;
+    padding:10px;
+    margin:10px;
+    width:92%;
+    opacity:30%;
+    font-family: System-ui;
+    float:left;
+    font-size:16px;
+}
+.searchTextbox:focus{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    border:1px #888 solid;
+    padding:10px;
+    margin:10px;
+    width:92%;
+    opacity:100%;
+    font-family: System-ui;
+    float:left;
+    font-size:16px;
+}
+.button:hover{
+    background:gray;
+}
+.textExplain{
+    text-align:left;
+}
+
+</style>
+
+<script>
+
+function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("searchbox");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("tutorialslist");
+    li = ul.getElementsByTagName("sub");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+            li[i].className="link";
+        } else {
+            li[i].style.display = "none";
+            li[i].className="link";
+        }
+    }
+}
+
+let textboxValue = "Das hier ist ein Beispieltext.";
+document.getElementById('mainButton').addEventListener('click', function(){
+
+    document.getElementById('mainTextbox').value = textboxValue;
+    alert("Die Ausgabe vom Input lautet: " + textboxValue);
+
+});
+document.getElementById('mainTextbox').addEventListener('click', function(){
+
+this.value = "";
+
+});
+
+function copyTextCode() {
+let copyText = "<button>MyButton</button>";
+  navigator.clipboard.writeText(copyText);
+  alert("Erfolgreich in die Zwischenablage kopiert!");
+};
+
+function copyTextCode2() {
+let copyText = "<style>\n\n.buttonStyle {\nbackground: rgb(39, 39, 39);\n}\n\n</style>";
+  navigator.clipboard.writeText(copyText);
+  alert("Erfolgreich in die Zwischenablage kopiert!");
+};
+
+function copyTextCode3() {
+let copyText = "<button class=\"buttonStyle\">MyButton</button>";
+  navigator.clipboard.writeText(copyText);
+  alert("Erfolgreich in die Zwischenablage kopiert!");
+};
+document.getElementById('homePage').addEventListener('click', function(){
+window.location.href = "index.html";
+});
+
+//hljs.highlightAll();
+</script>
+
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>-->
+</html>

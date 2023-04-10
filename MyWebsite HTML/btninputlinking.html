@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<html class="html" id="htmlsite">
+<head>
+    <title>Button & Input Verknüpfung | HTML Tutorials</title>
+    <!--<link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">-->
+
+<p style="border-bottom:3px #888 solid;padding:5px;cursor:pointer;" id="homePage">HTML Tutorials</p>
+
+<h3>Button & Input Verknüpfung</h3>
+
+<fieldset class="resultbox">
+    <legend>Resultat</legend>
+<button class="button" id="mainButton">MyButton</button>
+<input class="textbox" id="mainTextbox" readonly placeholder="Click on MyButton...">
+</fieldset>
+
+<body>
+<h2 style="text-align:left">Erklärung zu der Funktion, schrittweise:</h2>
+
+<h6 class="textExplain">1. Button erstellen mit dem tag: &lt;button&gt;. </h6>
+<button class="copyButton" id="copybutton1" onclick="copyTextCode()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">&lt;button&gt;MyButton&lt/button&gt;
+</code></pre></div>
+
+<h6 class="textExplain">2. Um dem Button bisschen Style zu verleihen, benötigt man dafür: &lt;style&gt;</h6>
+<button class="copyButton" id="copybutton2" onclick="copyTextCode2()">Code kopieren</button>
+<div class="codebox">
+<pre>
+<code class="language-html">&lt;style&gt;<br><br>.buttonStyle {<br>
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}<br><br>&lt;/style&gt;
+</code>
+</pre>
+</div>
+
+<h6 class="textExplain">3. Damit der Button den Style von ".buttonStyle" bekommt, brauchen wir das class-Attribut.</h6>
+<button class="copyButton" id="copybutton3" onclick="copyTextCode3()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle"&gt;MyButton&lt/button&gt;
+
+  &lt;style&gt;
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  
+  &lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">4. Input erstellen mit dem tag: &lt;input&gt;.</h6>
+<button class="copyButton" id="copybutton4" onclick="copyTextCode4()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle"&gt;MyButton&lt/button&gt;<br>
+  &lt;input&gt;&lt/input&gt;
+
+  &lt;style&gt;
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  
+  &lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">5. Um dem Input bisschen Style zu verleihen, fügt man ein weiteres className ".textboxStyle" hinzu.</h6>
+<button class="copyButton" id="copybutton5" onclick="copyTextCode5()">Code kopieren</button>
+<div class="codebox">
+<pre>
+<code class="language-html">&lt;button class="buttonStyle"&gt;MyButton&lt/button&gt;
+
+&lt;input&gt;&lt/input&gt;
+&lt;style&gt;
+
+  
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {<br>
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}<br><br>&lt;/style&gt;
+</code>
+</pre>
+</div>
+
+<h6 class="textExplain">6. "textboxStyle" in das class-Attribut vom Input einfügen.</h6>
+<button class="copyButton" id="copybutton6" onclick="copyTextCode6()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle"&gt;MyButton&lt/button&gt;<br>
+  &lt;input class="textboxStyle"&gt;&lt/input&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">7. Damit man in das Textfeld nichts reinschreiben kann, benutzt man das Attribut "readonly".</h6>
+<button class="copyButton" id="copybutton7" onclick="copyTextCode7()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" readonly&gt;&lt/input&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">8. Um mit JavaScript arbeiten zu können, benötigen die zwei Elemente jeweils id-Attribute.</h6>
+<button class="copyButton" id="copybutton8" onclick="copyTextCode8()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">9. Erstellen Sie den tag: &lt;script&gt;.</h6>
+<button class="copyButton" id="copybutton9" onclick="copyTextCode9()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+
+  &lt;script&gt;
+
+
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">10. Fügen Sie Methode document.getElementById() und den addEventListener mit dem Event "click" hinzu.</h6>
+<button class="copyButton" id="copybutton10" onclick="copyTextCode10()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+
+});
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">11. Deklarieren Sie die Variable "deinText" mit "let" oder "var".</h6>
+<button class="copyButton" id="copybutton11" onclick="copyTextCode11()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+let deinText = "Das hier ist ein Beispieltext.";
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+
+});
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">12. Erstellen Sie ein Window Pop-Up mit "window.alert()" bzw. "alert()".</h6>
+<button class="copyButton" id="copybutton12" onclick="copyTextCode12()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+let deinText = "Das hier ist ein Beispieltext.";
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+  alert("Die Ausgabe von dem Input lautet: " + deinText);
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+
+});
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">13. Damit der Input neben dem Button auch einen Wert bekommt, benutzen wir wieder "document.getElementById()".</h6>
+<button class="copyButton" id="copybutton13" onclick="copyTextCode13()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+let deinText = "Das hier ist ein Beispieltext.";
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+  alert("Die Ausgabe von dem Input lautet: " + deinText);
+
+  document.getElementById('inputID').value = deinText;
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+
+});
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">14. Damit wir den Text entfernen können durch ein Klick auf den Input, kopieren wir den Code von Schritt 13. und ändern den Text.</h6>
+<button class="copyButton" id="copybutton14" onclick="copyTextCode14()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+let deinText = "Das hier ist ein Beispieltext.";
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+  alert("Die Ausgabe von dem Input lautet: " + deinText);
+
+  document.getElementById('inputID').value = deinText;
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+  document.getElementById('inputID').value = "";
+});
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">15. Der Text in dem Input, der angezeigt wird bei default nennt man "placeholder" (Attribut), also Platzhalter.<br>
+Das funktioniert mit dem Attribut "placeholder" + Text im placeholder.
+</h6>
+<button class="copyButton" id="copybutton15" onclick="copyTextCode15()">Code kopieren</button>
+<div class="codebox"><pre><code class="language-html line-numbers">
+  &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+  &lt;input class="textboxStyle" id="inputID" readonly placeholder="Click on MyButton..."&gt;&lt/input&gt;
+  
+  &lt;script&gt;
+let deinText = "Das hier ist ein Beispieltext.";
+
+document.getElementById('buttonID').addEventListener('click', function(){
+
+  alert("Die Ausgabe von dem Input lautet: " + deinText);
+
+  document.getElementById('inputID').value = deinText;
+});
+document.getElementById('inputID').addEventListener('click', function(){
+
+  document.getElementById('inputID').value = "";
+});
+
+  &lt;/script&gt;
+
+  &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+</code></pre>
+</div>
+
+<h6 class="textExplain">16. Zu guter Letzt soll der Button sein Hintergrund ändern, wenn man mit dem Cursor über den Button hält.<br>
+  Das funktioniert, indem man bei &lt;style&gt; ein className hinzufügt mit der Pseudoklasse ":hover", also "schweben".
+  </h6>
+  <button class="copyButton" id="copybutton16" onclick="copyTextCode16()">Code kopieren</button>
+  <div class="codebox"><pre><code class="language-html line-numbers">
+    &lt;button class="buttonStyle" id="buttonID"&gt;MyButton&lt/button&gt;
+    &lt;input class="textboxStyle" id="inputID" readonly placeholder="Click on MyButton..."&gt;&lt/input&gt;
+    
+    &lt;script&gt;
+  let deinText = "Das hier ist ein Beispieltext.";
+  
+  document.getElementById('buttonID').addEventListener('click', function(){
+  
+    alert("Die Ausgabe von dem Input lautet: " + deinText);
+  
+    document.getElementById('inputID').value = deinText;
+  });
+  document.getElementById('inputID').addEventListener('click', function(){
+  
+    document.getElementById('inputID').value = "";
+  });
+  
+    &lt;/script&gt;
+
+    &lt;style&gt;
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .buttonStyle:hover{
+
+    background:gray;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+&lt;/style&gt;
+  </code></pre>
+  </div>
+
+<h6 class="textExplain">Denken Sie dran, dass &lt;style&gt; im Code vorhanden sein muss für das Design der jeweiligen Elemente (Button, Input, ...),<br>
+    sowie die notwendigen Maßnahmen für eine HTML Webseite.</h6>
+<h6 class="textExplain">Brauchen Sie Hilfe für das Erstellen von Webseiten? Klicken Sie auf den Button "Webseite erstellen".</h6>
+<a class="link2" href="erstewebseite.html">Webseite erstellen</a>
+
+<footer class="footercss">
+<p style="float:top;">copyright © 2023. Alle Rechte gehen an den Eigentümer von dieser Webseite.</p>
+  <div class="footerSections">
+  <b style="border-bottom:1px #888 solid;width:100%">Contact:</b><br>
+Instagram: wxlfgang666_mcc<br>
+Discord: Masterix#9759
+  </div>
+
+</footer>
+
+</body>
+</head>
+
+<style>
+.html{
+background:rgb(70, 70, 70);
+color:white;
+font-size:30px;
+text-align:center;
+font-family:System-ui;
+}
+.codebox{
+background:rgb(37, 37, 37);
+border-radius:8px;
+padding-left:10px;
+font-size:14px;
+font-family: monospace;
+text-align:left;
+
+border:2px #888 solid;
+
+font-language-override:initial;
+
+}
+.footercss{
+
+  margin-top:30px;
+  width:100%;
+  min-width:initial;
+  background:#2c2c2c;
+  font-size:16px;
+  content:none;
+  height:250px;
+  padding:1px;
+  border-radius:10px;
+}
+.footerSections{
+
+  float:left;
+  background:#383838;
+  border-radius:10px;
+  padding:10px;
+  margin:10px;
+  height:63%
+}
+
+.link{
+color:#ffffff;
+font-size:18px;
+width:90%;
+background:rgb(34, 34, 34);
+padding:8px;
+margin:5.5px;
+border-radius:8px;
+text-decoration: none;
+}
+.link2{
+color:#ffffff;
+font-size:18px;
+width:90%;
+background:rgb(34, 34, 34);
+padding:8px;
+margin:5.5px;
+border-radius:8px;
+display:block;
+text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius:8px;
+}
+::-webkit-scrollbar{
+    border-radius:8px;
+    background:#383838;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius:8px;
+}
+
+.resultbox{
+background:rgb(90, 90, 90);
+border-radius:8px;
+padding-left:10px;
+font-size:20px;
+font-weight: bold;
+border:2px #888 solid;
+user-select:none;
+}
+.button{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.copyButton{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:120px;
+    height:35px;
+    cursor:pointer;
+    display:block;
+}
+.textbox{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:1px #888 solid;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.button:hover{
+    background:gray;
+}
+.textExplain{
+    text-align:left;
+}
+
+</style>
+
+<script>
+window.id=top.id=id=>top.document.getElementById(id);
+
+let textboxValue = "Das hier ist ein Beispieltext.";
+id('mainButton').addEventListener('click', function(){
+
+    id('mainTextbox').value = textboxValue;
+    alert("Die Ausgabe von dem Input lautet: " + textboxValue);
+
+});
+id('mainTextbox').addEventListener('click', function(){
+
+this.value = "";
+
+});
+
+/////////////////////////////////////////////////////////////////////////////////
+
+function copyTextCode() {
+let copyText = `<button>MyButton</button>`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton1').innerHTML="Kopiert!";
+  setTimeout(function() {
+    id('copybutton1').innerHTML="Code kopieren";
+}, 1500);
+};
+function copyTextCode2() {
+let copyText = `
+<button>MyButton</button>
+
+<style>
+
+.buttonStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+</style>`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton2').innerHTML="Kopiert!";
+  setTimeout(function() {
+    id('copybutton2').innerHTML="Code kopieren";
+}, 1500);
+};
+function copyTextCode3() {
+let copyText = `
+<button class=\"buttonStyle\">MyButton</button>
+<style>
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  
+  </style>
+`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton3').innerHTML="Kopiert!";
+  setTimeout(function() {
+    id('copybutton3').innerHTML="Code kopieren";
+}, 1500);
+};
+function copyTextCode4() {
+let copyText = `
+<button class="buttonStyle">MyButton</button>
+
+  <input></input>
+
+  <style>
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  
+  </style>
+  `;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton4').innerHTML="Kopiert!";
+  setTimeout(function() {
+    id('copybutton4').innerHTML="Code kopieren";
+}, 1500);
+};
+function copyTextCode5() {
+let copyText = `
+<button class="buttonStyle">MyButton</button>
+
+<input></input>
+<style>
+
+  
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+</style>
+`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton5').innerHTML="Kopiert!";
+  setTimeout(function() {
+    id('copybutton5').innerHTML="Code kopieren";
+}, 1500);
+};
+function copyTextCode6() {
+let copyText = `
+<button class="buttonStyle">MyButton</button>
+
+  <input class="textboxStyle"></input>
+
+  <style>
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+</style>
+`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton6').innerHTML="Kopiert!";
+  id('copybutton6').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton6').innerHTML="Code kopieren";
+    id('copybutton6').style.color="white";
+}, 1500);
+};
+function copyTextCode7() {
+let copyText = `
+<button class="buttonStyle">MyButton</button>
+  <input class="textboxStyle" readonly></input>
+
+  <style>
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+</style>
+`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton7').innerHTML="Kopiert!";
+  id('copybutton7').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton7').innerHTML="Code kopieren";
+    id('copybutton7').style.color="white";
+}, 1500);
+};
+function copyTextCode8() {
+let copyText = `
+<button class="buttonStyle" id="buttonID">MyButton</button>
+  <input class="textboxStyle" id="inputID" readonly></input>
+
+  <style>
+
+  .buttonStyle {
+
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px;
+    width:20%;
+  }
+  .textboxStyle {
+
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+  border:1px #888 solid;
+  color:white;
+  padding:10px;
+  margin:10px;
+  width:20%;
+}
+
+</style>
+`;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton8').innerHTML="Kopiert!";
+  id('copybutton8').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton8').innerHTML="Code kopieren";
+    id('copybutton8').style.color="white";
+}, 1500);
+};
+function copyTextCode9() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton9').innerHTML="Kopiert!";
+  id('copybutton9').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton9').innerHTML="Code kopieren";
+    id('copybutton9').style.color="white";
+}, 1500);
+};
+function copyTextCode10() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton10').innerHTML="Kopiert!";
+  id('copybutton10').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton10').innerHTML="Code kopieren";
+    id('copybutton10').style.color="white";
+}, 1500);
+};
+function copyTextCode11() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton11').innerHTML="Kopiert!";
+  id('copybutton11').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton11').innerHTML="Code kopieren";
+    id('copybutton11').style.color="white";
+}, 1500);
+};
+function copyTextCode12() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton12').innerHTML="Kopiert!";
+  id('copybutton12').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton12').innerHTML="Code kopieren";
+    id('copybutton12').style.color="white";
+}, 1500);
+};
+function copyTextCode13() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton13').innerHTML="Kopiert!";
+  id('copybutton13').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton13').innerHTML="Code kopieren";
+    id('copybutton13').style.color="white";
+}, 1500);
+};
+function copyTextCode14() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton14').innerHTML="Kopiert!";
+  id('copybutton14').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton14').innerHTML="Code kopieren";
+    id('copybutton14').style.color="white";
+}, 1500);
+};
+function copyTextCode15() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton15').innerHTML="Kopiert!";
+  id('copybutton15').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton15').innerHTML="Code kopieren";
+    id('copybutton15').style.color="white";
+}, 1500);
+};
+function copyTextCode16() {
+let copyText = ``;
+  navigator.clipboard.writeText(copyText);
+  id('copybutton16').innerHTML="Kopiert!";
+  id('copybutton16').style.color="#04B505";
+  setTimeout(function() {
+    id('copybutton16').innerHTML="Code kopieren";
+    id('copybutton16').style.color="white";
+}, 1500);
+};
+
+/////////////////////////////////////////////////////////////////////////////////
+
+/*window.copyPopup=top.copyPopup=()=>{
+		let el=make('input');
+		el.id='copyPopupId';
+		el.value='Erfolgreich in die Zwischenablage kopiert!';
+		el.className='copypopup';
+		el.type='button';
+		id('htmlsite').appendChild(el);
+	};*/
+
+document.getElementById('homePage').addEventListener('click', function(){
+window.location.href = "index.html";
+});
+//hljs.highlightAll();
+</script>
+
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>-->
+</html>

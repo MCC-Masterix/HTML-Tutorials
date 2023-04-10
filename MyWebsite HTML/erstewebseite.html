@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="html">
+<head>
+    <title>Die erste Webseite erstellen mit HTML | HTML Tutorials</title>
+    <!--<link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">-->
+
+    <p style="border-bottom:3px #888 solid;padding:5px;cursor:pointer;" id="homePageX">HTML Tutorials</p>
+
+<h3>Die erste Webseite erstellen mit HTML.</h3>
+
+<div class="homepageSections">
+<h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">Wie erstelle ich eine Webseite?</h6>
+<p style="text-align:left;font-size:17px;">
+    1. Öffnen Sie eine App, die HTML unterstützt. Zum Beispiel Editor, Notepad ++, Visual Studio Code, Replit, ...<br>
+    2. Schreiben Sie den folgenden Code in ihre App:
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+        &lt;html&gt;
+
+        &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+        &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+        &lt/html&gt;
+    </code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    3. Geben Sie ihrer Webseite bisschen Hintergrundfarbe mit der CSS-Eigenschaft "background" und dem style-Attribut.
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+        &lt;html style="background:gray"&gt;
+
+        &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+        &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+        &lt/html&gt;
+    </code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    4. Um den Text zu vergrößern und es in die Mitte zu bringen, benötigen Sie die CSS-Eigenschaften "font-size" & "text-align".<br>
+    (Die Standard-Schriftgröße beträgt 16px.)
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    5. Fügen Sie einen Text hinzu mit dem tag &lt;div&gt;.
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    6. Fügen Sie einen Button hinzu mit Hilfe von &ltbutton&gt;.
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt;button&gt;Webseite schließen&lt;/button&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    7. Damit Sie die Webseite schließen können, benötigen Sie JS (JavaScript).<br>
+    8. Dafür müssen Sie zuerst eine ID angeben für ihr Button mit dem id-Attribut.
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt;button id="webseiteSchließen"&gt;Webseite schließen&lt;/button&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    9. Fügen Sie einen tag namens &ltscript&gt; hinzu.
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt;button id="webseiteSchließen"&gt;Webseite schließen&lt;/button&gt;
+
+    &ltscript&gt;
+
+
+
+    &lt/script&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    10. Jetzt kommt die Methode document.getElementById() ins Spiel.<br><br>
+    Das "getElementById" greift direkt auf ein Element zu, das durch sein id-Attribut eindeutig identifiziert ist.<br>
+    Achten Sie auf Groß - und Kleinschreibung, da die ID übereinstimmen muss.<br><br>
+    Außerdem müssen Sie die Methode "addEventListener" dazu schreiben, damit der Button weiß, auf welche Events was ausführt werden soll.<br>
+    Beispiel-Events sind: <b>click, load, change, resize, mouseup, mousedown, ...</b>
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt;button id="webseiteSchließen"&gt;Webseite schließen&lt;/button&gt;
+
+    &ltscript&gt;
+
+document.getElementById('webseiteSchließen').addEventListener('click', function(){
+
+    
+})
+
+    &lt/script&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+<p style="text-align:left;font-size:17px;"><br>
+    11. Fügen Sie in die Methode diese Funktion hinzu: window.close();
+</p>
+
+<div class="codebox"><pre><code class="language-html" id="codeboxstep1">
+    &lt;html style="background:gray;font-size:30px;text-align:center"&gt;
+
+    &lt;title&gt;Meine erste Webseite&lt;/title&gt;
+    &lt;p&gt;Meine erste Webseite&lt;/p&gt;
+
+    &lt;div style="background:white;font-size:20px"&gt;
+    Drücken Sie auf den Button unten, um diese Webseite zu schließen.
+    &lt;/div&gt;
+
+    &lt;button id="webseiteSchließen"&gt;Webseite schließen&lt;/button&gt;
+
+    &ltscript&gt;
+
+document.getElementById('webseiteSchließen').addEventListener('click', function(){
+
+    window.close();
+})
+
+    &lt/script&gt;
+
+    &lt/html&gt;
+</code></pre>
+</div>
+
+</p>
+</div>
+<div class="homepageSections">
+    <h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">HTML Anfänger?</h6>
+    <p style="text-align:left;font-size:17px;">Kein Problem! Die wichtigsten Sachen rund um das Erstellen von Websiten mit HTML finden Sie hier.</p>
+    <a class="link2" href="htmlgrundlagen.html">HTML Grundlagen</a>
+</div>
+
+<div class="homepageSections">
+        <h6 style="text-align:left;border-bottom:1px #888 solid;padding:10px;">Worum geht es auf dieser Website?</h6>
+        <p style="text-align:left;font-size:17px;">Diese Website wird dazu gedient, die Grundlagen von HTML/CSS/JS und verschiedene Funktionen in HTML, CSS und JS kennenzulernen. </p>
+</div>
+
+</head>
+
+<style>
+.html{
+background:rgb(70, 70, 70);
+color:white;
+font-size:30px;
+text-align:center;
+font-family:System-ui;
+padding:10px;
+}
+.homepageSections{
+    width:92.5%;
+    float:left;
+    background:#383838;
+    padding:40px;
+    border-radius:10px;
+    margin:10px;
+}
+.homepageBoxes{
+    background:#383838;
+    height:3%;
+    width:20%;
+    padding:10px;
+    border-radius:15px;
+    border:2px #acacac solid;
+    user-select: none;
+    float:right;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius:8px;
+}
+::-webkit-scrollbar{
+    border-radius:8px;
+    background:#383838;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius:8px;
+}
+
+.link{
+color:#ffffff;
+font-size:18px;
+width:90%;
+background:rgb(34, 34, 34);
+padding:8px;
+margin:5.5px;
+border-radius:8px;
+text-decoration: none;
+}
+.link2{
+color:#ffffff;
+font-size:18px;
+width:90%;
+background:rgb(34, 34, 34);
+padding:8px;
+margin:5.5px;
+border-radius:8px;
+display:block;
+text-decoration: none;
+}
+.codebox{
+background:rgb(37, 37, 37);
+border-radius:8px;
+padding-left:10px;
+font-size:14px;
+font-family: monospace;
+text-align:left;
+border:2px #888 solid;
+user-select:none;
+font-language-override:initial;
+
+}
+.resultbox{
+background:rgb(90, 90, 90);
+border-radius:8px;
+padding-left:10px;
+font-size:20px;
+font-weight: bold;
+border:2px #888 solid;
+user-select:none;
+}
+.button{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.copyButton{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:10px;
+    width:120px;
+    height:35px;
+    cursor:pointer;
+    display:block;
+}
+.textbox{
+    background: rgb(39, 39, 39);
+    border-radius: 10px;
+    color:white;
+    border:1px #888 solid;
+    padding:10px;
+    margin:10px;
+    width:20%;
+}
+.button:hover{
+    background:gray;
+}
+.textExplain{
+    text-align:left;
+}
+
+</style>
+
+<script>
+window.id=top.id=id=>top.document.getElementById(id);
+
+id('homePageX').addEventListener('click', function(){
+window.location.href = "index.html";
+});
+
+//hljs.highlightAll();
+</script>
+
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>-->
+</html>
